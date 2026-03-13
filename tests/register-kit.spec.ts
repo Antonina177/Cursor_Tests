@@ -31,6 +31,8 @@ test.describe('Register Kit - Create Patient', () => {
       await page.waitForURL(url => !url.pathname.includes('/sign-in'), { timeout: 10000 });
     });
 
+    //Unregistered Kits tab
+
     await test.step('5. Open sidebar - navigate to Kits', async () => {
       await page.locator('#root nav div:nth-child(3) button').waitFor({ state: 'visible' });
     });
@@ -132,3 +134,6 @@ test.describe('Register Kit - Create Patient', () => {
     });
   });
 });
+
+//* feature-discounts
+//testbranch

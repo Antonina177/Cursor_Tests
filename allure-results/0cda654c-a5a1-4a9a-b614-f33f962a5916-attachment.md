@@ -1,0 +1,321 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Notifications alt+T":
+    - list:
+      - listitem [ref=e3]:
+        - img [ref=e5]
+        - generic [ref=e8]: Kit assigned to new patient successfully!
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Admin Portal
+        - button "Collapse sidebar" [ref=e13] [cursor=pointer]:
+          - img [ref=e14]
+      - navigation [ref=e16]:
+        - link "Customers" [ref=e17] [cursor=pointer]:
+          - /url: /customers
+          - img [ref=e18]
+          - generic [ref=e22]: Customers
+        - link "Patients" [ref=e23] [cursor=pointer]:
+          - /url: /patients
+          - img [ref=e24]
+          - generic [ref=e29]: Patients
+        - generic [ref=e30]:
+          - button "Kits" [ref=e31] [cursor=pointer]:
+            - generic [ref=e32]:
+              - img [ref=e33]
+              - generic [ref=e37]: Kits
+            - img [ref=e38]
+          - generic [ref=e40]:
+            - link "Active Kits" [ref=e41] [cursor=pointer]:
+              - /url: /kits
+              - generic [ref=e42]: Active Kits
+            - link "Inactive Kits" [ref=e43] [cursor=pointer]:
+              - /url: /kits/inactive
+              - generic [ref=e44]: Inactive Kits
+            - link "Health Monitor" [ref=e45] [cursor=pointer]:
+              - /url: /kits/health-monitor
+              - generic [ref=e46]: Health Monitor
+        - button "Warehouse" [ref=e48] [cursor=pointer]:
+          - generic [ref=e49]:
+            - img [ref=e50]
+            - generic [ref=e53]: Warehouse
+          - img [ref=e54]
+        - button "Orders" [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]:
+            - img [ref=e59]
+            - generic [ref=e63]: Orders
+          - img [ref=e64]
+        - button "Lab" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]:
+            - img [ref=e69]
+            - generic [ref=e71]: Lab
+          - img [ref=e72]
+        - link "Admin" [ref=e74] [cursor=pointer]:
+          - /url: /admin
+          - img [ref=e75]
+          - generic [ref=e78]: Admin
+      - generic [ref=e79]:
+        - link "Profile" [ref=e80] [cursor=pointer]:
+          - /url: /profile
+          - img [ref=e81]
+          - generic [ref=e84]: Profile
+        - button "Logout" [ref=e85] [cursor=pointer]:
+          - img [ref=e86]
+          - generic [ref=e89]: Logout
+    - main [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - heading "Patients" [level=1] [ref=e93]
+          - paragraph [ref=e94]: Search and manage all patients across all customers
+        - generic [ref=e95]:
+          - textbox "Search patients by name, email, PID, external ID, or customer..." [active] [ref=e97]: Michael Smith
+          - table [ref=e100]:
+            - rowgroup [ref=e101]:
+              - row "Patient Name PID External ID Customer Email Phone DOB Gender" [ref=e102]:
+                - columnheader "Patient Name" [ref=e103] [cursor=pointer]
+                - columnheader "PID" [ref=e104] [cursor=pointer]
+                - columnheader "External ID" [ref=e105]
+                - columnheader "Customer" [ref=e106] [cursor=pointer]
+                - columnheader "Email" [ref=e107] [cursor=pointer]
+                - columnheader "Phone" [ref=e108]
+                - columnheader "DOB" [ref=e109] [cursor=pointer]
+                - columnheader "Gender" [ref=e110] [cursor=pointer]
+            - rowgroup [ref=e111]:
+              - row "Lab Admin 374 - Trudiagnostic Admin Bob labadmin@trudiagnostic.com - 06/08/2000 Male" [ref=e112]:
+                - cell "Lab Admin" [ref=e113] [cursor=pointer]
+                - cell "374" [ref=e114]
+                - cell "-" [ref=e115]
+                - cell "Trudiagnostic Admin Bob" [ref=e116] [cursor=pointer]
+                - cell "labadmin@trudiagnostic.com" [ref=e117]
+                - cell "-" [ref=e118]
+                - cell "06/08/2000" [ref=e119]
+                - cell "Male" [ref=e120]
+              - row "- 682 - Genetikaplus - 01/01/1900 Unknown" [ref=e121]:
+                - cell "-" [ref=e122]
+                - cell "682" [ref=e123]
+                - cell "-" [ref=e124] [cursor=pointer]
+                - cell "Genetikaplus" [ref=e125] [cursor=pointer]
+                - cell [ref=e126]
+                - cell "-" [ref=e127]
+                - cell "01/01/1900" [ref=e128]
+                - cell "Unknown" [ref=e129]
+              - row "Roushan Shashi 687 - House Clinicsss shashi.roushan1@arcscorp.net - 06/03/2002 Male" [ref=e130]:
+                - cell "Roushan Shashi" [ref=e131] [cursor=pointer]
+                - cell "687" [ref=e132]
+                - cell "-" [ref=e133]
+                - cell "House Clinicsss" [ref=e134] [cursor=pointer]
+                - cell "shashi.roushan1@arcscorp.net" [ref=e135]
+                - cell "-" [ref=e136]
+                - cell "06/03/2002" [ref=e137]
+                - cell "Male" [ref=e138]
+              - row "Tudiagnostic Clinic test 696 - House Clinicsss twarun.verma@arcscorp.net - 07/01/1990 Male" [ref=e139]:
+                - cell "Tudiagnostic Clinic test" [ref=e140] [cursor=pointer]
+                - cell "696" [ref=e141]
+                - cell "-" [ref=e142]
+                - cell "House Clinicsss" [ref=e143] [cursor=pointer]
+                - cell "twarun.verma@arcscorp.net" [ref=e144]
+                - cell "-" [ref=e145]
+                - cell "07/01/1990" [ref=e146]
+                - cell "Male" [ref=e147]
+              - row "Test Update 2 F Test Update 2 L 698 df4cf771-3e14-43d5-b044-3286ffc6e912 House Clinicsss yevhen.hlushyn@trudiagnostic.com 8585654589 03/03/1996 Male" [ref=e148]:
+                - cell "Test Update 2 F Test Update 2 L" [ref=e149] [cursor=pointer]
+                - cell "698" [ref=e150]
+                - cell "df4cf771-3e14-43d5-b044-3286ffc6e912" [ref=e151]
+                - cell "House Clinicsss" [ref=e152] [cursor=pointer]
+                - cell "yevhen.hlushyn@trudiagnostic.com" [ref=e153]
+                - cell "8585654589" [ref=e154]
+                - cell "03/03/1996" [ref=e155]
+                - cell "Male" [ref=e156]
+              - row "Shorya Test's QA 699 - House Clinicsss vipin.maurya@arcscorp.net - 10/04/2018 Male" [ref=e157]:
+                - cell "Shorya Test's QA" [ref=e158] [cursor=pointer]
+                - cell "699" [ref=e159]
+                - cell "-" [ref=e160]
+                - cell "House Clinicsss" [ref=e161] [cursor=pointer]
+                - cell "vipin.maurya@arcscorp.net" [ref=e162]
+                - cell "-" [ref=e163]
+                - cell "10/04/2018" [ref=e164]
+                - cell "Male" [ref=e165]
+              - row "Rajneesh Singh 701 - Fountainlife rajneesh.singh@arcscorp.net - 06/11/2002 Male" [ref=e166]:
+                - cell "Rajneesh Singh" [ref=e167] [cursor=pointer]
+                - cell "701" [ref=e168]
+                - cell "-" [ref=e169]
+                - cell "Fountainlife" [ref=e170] [cursor=pointer]
+                - cell "rajneesh.singh@arcscorp.net" [ref=e171]
+                - cell "-" [ref=e172]
+                - cell "06/11/2002" [ref=e173]
+                - cell "Male" [ref=e174]
+              - row "ARCS QA P 708 - House Clinicsss arcs.devtesnew@gmail.com - 01/31/1989 Female" [ref=e175]:
+                - cell "ARCS QA P" [ref=e176] [cursor=pointer]
+                - cell "708" [ref=e177]
+                - cell "-" [ref=e178]
+                - cell "House Clinicsss" [ref=e179] [cursor=pointer]
+                - cell "arcs.devtesnew@gmail.com" [ref=e180]
+                - cell "-" [ref=e181]
+                - cell "01/31/1989" [ref=e182]
+                - cell "Female" [ref=e183]
+              - row "Jamesssss Antonina_Tier_Price 719 - James Smith Clinic jamestestpatient1@arcscorp.net 7759802006 05/01/2018 Male" [ref=e184]:
+                - cell "Jamesssss Antonina_Tier_Price" [ref=e185] [cursor=pointer]
+                - cell "719" [ref=e186]
+                - cell "-" [ref=e187]
+                - cell "James Smith Clinic" [ref=e188] [cursor=pointer]
+                - cell "jamestestpatient1@arcscorp.net" [ref=e189]
+                - cell "7759802006" [ref=e190]
+                - cell "05/01/2018" [ref=e191]
+                - cell "Male" [ref=e192]
+              - row "ARCS Sachin 720 - House Clinicsss sac@arcscorp.net - 02/08/1994 Male" [ref=e193]:
+                - cell "ARCS Sachin" [ref=e194] [cursor=pointer]
+                - cell "720" [ref=e195]
+                - cell "-" [ref=e196]
+                - cell "House Clinicsss" [ref=e197] [cursor=pointer]
+                - cell "sac@arcscorp.net" [ref=e198]
+                - cell "-" [ref=e199]
+                - cell "02/08/1994" [ref=e200]
+                - cell "Male" [ref=e201]
+              - row "James TestPatient2 722 - James Smith Clinic jamestestpatient2@arcscorp.net - 06/02/2020 Female" [ref=e202]:
+                - cell "James TestPatient2" [ref=e203] [cursor=pointer]
+                - cell "722" [ref=e204]
+                - cell "-" [ref=e205]
+                - cell "James Smith Clinic" [ref=e206] [cursor=pointer]
+                - cell "jamestestpatient2@arcscorp.net" [ref=e207]
+                - cell "-" [ref=e208]
+                - cell "06/02/2020" [ref=e209]
+                - cell "Female" [ref=e210]
+              - row "Nishant Kumar 723 - House Clinicsss nishant.kumar@arcscorp.net - 06/06/1990 Male" [ref=e211]:
+                - cell "Nishant Kumar" [ref=e212] [cursor=pointer]
+                - cell "723" [ref=e213]
+                - cell "-" [ref=e214]
+                - cell "House Clinicsss" [ref=e215] [cursor=pointer]
+                - cell "nishant.kumar@arcscorp.net" [ref=e216]
+                - cell "-" [ref=e217]
+                - cell "06/06/1990" [ref=e218]
+                - cell "Male" [ref=e219]
+              - row "Michael2 Test 724 - Michael Smith Clinic michaeltestpatient1@ahotemail.com 7759802006 06/01/2000 Male" [ref=e220]:
+                - cell "Michael2 Test" [ref=e221] [cursor=pointer]
+                - cell "724" [ref=e222]
+                - cell "-" [ref=e223]
+                - cell "Michael Smith Clinic" [ref=e224] [cursor=pointer]
+                - cell "michaeltestpatient1@ahotemail.com" [ref=e225]
+                - cell "7759802006" [ref=e226]
+                - cell "06/01/2000" [ref=e227]
+                - cell "Male" [ref=e228]
+              - row "Michael San 725 - Michael Smith Clinic michaeltestpatient2@mannu.com - 06/01/1980 Female" [ref=e229]:
+                - cell "Michael San" [ref=e230] [cursor=pointer]
+                - cell "725" [ref=e231]
+                - cell "-" [ref=e232]
+                - cell "Michael Smith Clinic" [ref=e233] [cursor=pointer]
+                - cell "michaeltestpatient2@mannu.com" [ref=e234]
+                - cell "-" [ref=e235]
+                - cell "06/01/1980" [ref=e236]
+                - cell "Female" [ref=e237]
+              - row "Amrik Kumar 726 - House Clinicsss amrik.kumar@arcscorp.net - 06/03/1978 Male" [ref=e238]:
+                - cell "Amrik Kumar" [ref=e239] [cursor=pointer]
+                - cell "726" [ref=e240]
+                - cell "-" [ref=e241]
+                - cell "House Clinicsss" [ref=e242] [cursor=pointer]
+                - cell "amrik.kumar@arcscorp.net" [ref=e243]
+                - cell "-" [ref=e244]
+                - cell "06/03/1978" [ref=e245]
+                - cell "Male" [ref=e246]
+              - row "Robert TestPatient1 727 - House Clinicsss roberttestpatient1@arcscorp.net - 06/01/2020 Male" [ref=e247]:
+                - cell "Robert TestPatient1" [ref=e248] [cursor=pointer]
+                - cell "727" [ref=e249]
+                - cell "-" [ref=e250]
+                - cell "House Clinicsss" [ref=e251] [cursor=pointer]
+                - cell "roberttestpatient1@arcscorp.net" [ref=e252]
+                - cell "-" [ref=e253]
+                - cell "06/01/2020" [ref=e254]
+                - cell "Male" [ref=e255]
+              - row "Robert TestPatient2 728 - House Clinicsss roberttestpatient2@arcscorp.net - 06/01/2021 Female" [ref=e256]:
+                - cell "Robert TestPatient2" [ref=e257] [cursor=pointer]
+                - cell "728" [ref=e258]
+                - cell "-" [ref=e259]
+                - cell "House Clinicsss" [ref=e260] [cursor=pointer]
+                - cell "roberttestpatient2@arcscorp.net" [ref=e261]
+                - cell "-" [ref=e262]
+                - cell "06/01/2021" [ref=e263]
+                - cell "Female" [ref=e264]
+              - row "David TestPatient1 730 - David Smith Clinic davidtestpatient1@arcscorp.net - 06/02/2020 Male" [ref=e265]:
+                - cell "David TestPatient1" [ref=e266] [cursor=pointer]
+                - cell "730" [ref=e267]
+                - cell "-" [ref=e268]
+                - cell "David Smith Clinic" [ref=e269] [cursor=pointer]
+                - cell "davidtestpatient1@arcscorp.net" [ref=e270]
+                - cell "-" [ref=e271]
+                - cell "06/02/2020" [ref=e272]
+                - cell "Male" [ref=e273]
+              - row "rocky disuaza 731 - House Clinicsss rocky.disuaza@arcscorp.net - 06/02/1990 Male" [ref=e274]:
+                - cell "rocky disuaza" [ref=e275] [cursor=pointer]
+                - cell "731" [ref=e276]
+                - cell "-" [ref=e277]
+                - cell "House Clinicsss" [ref=e278] [cursor=pointer]
+                - cell "rocky.disuaza@arcscorp.net" [ref=e279]
+                - cell "-" [ref=e280]
+                - cell "06/02/1990" [ref=e281]
+                - cell "Male" [ref=e282]
+              - row "Davidd TestPatient2 732 - David Smith Clinic davidtestpatient2@arcscorp.net - 06/01/2020 Female" [ref=e283]:
+                - cell "Davidd TestPatient2" [ref=e284] [cursor=pointer]
+                - cell "732" [ref=e285]
+                - cell "-" [ref=e286]
+                - cell "David Smith Clinic" [ref=e287] [cursor=pointer]
+                - cell "davidtestpatient2@arcscorp.net" [ref=e288]
+                - cell "-" [ref=e289]
+                - cell "06/01/2020" [ref=e290]
+                - cell "Female" [ref=e291]
+              - row "Mary TestPatient1 733 - Mary Smith Clinic marytestpatient1@arcscorp.net - 06/01/2020 Male" [ref=e292]:
+                - cell "Mary TestPatient1" [ref=e293] [cursor=pointer]
+                - cell "733" [ref=e294]
+                - cell "-" [ref=e295]
+                - cell "Mary Smith Clinic" [ref=e296] [cursor=pointer]
+                - cell "marytestpatient1@arcscorp.net" [ref=e297]
+                - cell "-" [ref=e298]
+                - cell "06/01/2020" [ref=e299]
+                - cell "Male" [ref=e300]
+              - row "Mary TestPatient2 734 - Mary Smith Clinic marytestpatient2@arcscorp.net - 06/01/2020 Female" [ref=e301]:
+                - cell "Mary TestPatient2" [ref=e302] [cursor=pointer]
+                - cell "734" [ref=e303]
+                - cell "-" [ref=e304]
+                - cell "Mary Smith Clinic" [ref=e305] [cursor=pointer]
+                - cell "marytestpatient2@arcscorp.net" [ref=e306]
+                - cell "-" [ref=e307]
+                - cell "06/01/2020" [ref=e308]
+                - cell "Female" [ref=e309]
+              - row "Jitendra Gangwar 749 - Hannah's Clinic jitendra.gangwar@arcscorp.net - 05/01/2001 Male" [ref=e310]:
+                - cell "Jitendra Gangwar" [ref=e311] [cursor=pointer]
+                - cell "749" [ref=e312]
+                - cell "-" [ref=e313]
+                - cell "Hannah's Clinic" [ref=e314] [cursor=pointer]
+                - cell "jitendra.gangwar@arcscorp.net" [ref=e315]
+                - cell "-" [ref=e316]
+                - cell "05/01/2001" [ref=e317]
+                - cell "Male" [ref=e318]
+              - row "ARCSss TEST 751 - Antonia_Test_Stage scanun@arcscorp.net - 06/12/2020 Male" [ref=e319]:
+                - cell "ARCSss TEST" [ref=e320] [cursor=pointer]
+                - cell "751" [ref=e321]
+                - cell "-" [ref=e322]
+                - cell "Antonia_Test_Stage" [ref=e323] [cursor=pointer]
+                - cell "scanun@arcscorp.net" [ref=e324]
+                - cell "-" [ref=e325]
+                - cell "06/12/2020" [ref=e326]
+                - cell "Male" [ref=e327]
+              - row "ARCSss TEST 752 - Antonia_Test_Stage scanun@arcscorp.net - 06/12/2020 Male" [ref=e328]:
+                - cell "ARCSss TEST" [ref=e329] [cursor=pointer]
+                - cell "752" [ref=e330]
+                - cell "-" [ref=e331]
+                - cell "Antonia_Test_Stage" [ref=e332] [cursor=pointer]
+                - cell "scanun@arcscorp.net" [ref=e333]
+                - cell "-" [ref=e334]
+                - cell "06/12/2020" [ref=e335]
+                - cell "Male" [ref=e336]
+        - generic [ref=e337]:
+          - generic [ref=e338]: Showing 1 to 25 of 17580 results
+          - generic [ref=e339]:
+            - button "Previous" [disabled] [ref=e340]
+            - button "1" [ref=e341] [cursor=pointer]
+            - button "2" [ref=e342] [cursor=pointer]
+            - generic [ref=e343]: ...
+            - button "704" [ref=e344] [cursor=pointer]
+            - button "Next" [ref=e345] [cursor=pointer]
+```

@@ -3,10 +3,9 @@ import { LoginPage } from '../pages/login.page';
 import { SidebarComponent } from '../components/sidebar.component';
 import { OrdersPage } from '../pages/orders.page';
 import { CreateOrderModal } from '../pages/createOrder.modal';
-import { TEST_USERNAME, TEST_PASSWORD, URLS } from '../helpers/constants';
+import { TEST_USERNAME, TEST_PASSWORD, URLS, CUSTOMER_SEARCH } from '../helpers/constants';
 
 // Test-specific constants
-const CUSTOMER_SEARCH = 'Antonina_Migration20';
 const PRODUCT_NAME = 'TruHealth (TruHealth)';
 const ORDER_NOTES = 'Automation';
 
@@ -43,13 +42,12 @@ test.describe('Create Order E2E', () => {
     // Step 6: Assert that the "Create Regular Order" modal popup appears
     await createOrderModal.waitForModal();
     await expect(createOrderModal.createRegularOrderModalTitle()).toBeVisible();
-    await expect(createOrderModal.modal()).toBeVisible();
 
-    // Step 7: In the "Search Customer" field search for Antonina_Migration20
+    // Step 7: In the "Search Customer" field search for the environment customer
     await createOrderModal.searchCustomerInput().waitFor({ state: 'visible', timeout: 5000 });
     await createOrderModal.searchCustomer(CUSTOMER_SEARCH);
 
-    // Step 8: Select "Antonina_Migration20" from the dropdown results
+    // Step 8: Select the customer from the dropdown results
     await createOrderModal.selectCustomerFromDropdown(CUSTOMER_SEARCH);
 
     // Step 9 & 10: In the "Product Information" section, select "TruHealth (TruHealth)" from the product dropdown

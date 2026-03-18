@@ -20,9 +20,9 @@ test.describe('Login', () => {
     // Perform login and wait for navigation away from sign-in page
     await loginPage.loginAndWaitForNavigation(TEST_USERNAME, TEST_PASSWORD);
 
-    // Assert: User is redirected away from sign-in page
+    // Assert: User is redirected away from sign-in page and dashboard title is visible
     await expect(page).not.toHaveURL(/sign-in/);
-    await expect(page).toHaveURL(/newadmin\.dev\.trudiagnostic\.com/);
+    await expect(page.locator('#root > div.flex.h-screen > main > div > div:nth-child(1) > h1')).toBeVisible();
   });
 
   test('login with wrong password', async ({ page }) => {

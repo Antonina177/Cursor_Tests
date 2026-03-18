@@ -4,7 +4,7 @@ export class CreateOrderModal {
   readonly page: Page;
 
   readonly modal = () =>
-    this.page.locator('.fixed.inset-0.bg-white.bg-opacity-10');
+    this.page.locator('.fixed.inset-0').filter({ has: this.page.getByText('Create Regular Order') });
 
   readonly searchCustomerInput = () =>
     this.page.locator('.fixed.inset-0 form div:nth-child(1) input').first();

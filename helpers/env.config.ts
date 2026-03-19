@@ -15,8 +15,12 @@
 export interface EnvConfig {
   /** UI base URL (no trailing slash) */
   baseURL: string;
-  /** API base URL (no trailing slash) */
+  /** Ops/admin API base URL (no trailing slash) */
   apiBaseURL: string;
+  /** External order API base URL (no trailing slash) */
+  orderApiBaseURL: string;
+  /** API key for the external order API */
+  apiKey: string;
   /** Admin portal username */
   username: string;
   /** Admin portal password */
@@ -27,19 +31,23 @@ export interface EnvConfig {
 
 const configs: Record<string, EnvConfig> = {
   development: {
-    baseURL:        'https://newadmin.dev.trudiagnostic.com',
-    apiBaseURL:     'https://ops.dev.trudiagnostic.com',
-    username:       'antonina.horbenko+myadmin@trudiagnostic.com',
-    password:       'Passw0rd!',
-    customerSearch: 'Antonina_Migration20',
+    baseURL:         'https://newadmin.dev.trudiagnostic.com',
+    apiBaseURL:      'https://ops.dev.trudiagnostic.com',
+    orderApiBaseURL: 'https://api.dev.trudiagnostic.com',
+    apiKey:          '3debb027-6bca-4699-a730-12a31c8c505e',
+    username:        'antonina.horbenko+myadmin@trudiagnostic.com',
+    password:        'Passw0rd!',
+    customerSearch:  'Antonina_Migration20',
   },
 
   staging: {
-    baseURL:        'https://newadmin.staging.trudiagnostic.com',
-    apiBaseURL:     'https://ops.staging.trudiagnostic.com',
-    username:       'antonina.horbenko+myadminstage@trudiagnostic.com',
-    password:       'Passw0rd!',
-    customerSearch: 'Antonia_Batch_Hold',
+    baseURL:         'https://newadmin.staging.trudiagnostic.com',
+    apiBaseURL:      'https://ops.staging.trudiagnostic.com',
+    orderApiBaseURL: 'https://api.staging.trudiagnostic.com',
+    apiKey:          'f9059431-b8d8-407c-a9d9-28e1792b4271',
+    username:        'antonina.horbenko+myadminstage@trudiagnostic.com',
+    password:        'Passw0rd!',
+    customerSearch:  'Antonia_Batch_Hold',
   },
 };
 

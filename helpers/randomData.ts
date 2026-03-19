@@ -80,3 +80,13 @@ export function generateCorporationName(): string {
   const randomSuffix = Math.floor(Math.random() * 90 + 10); // 10–99
   return `Automation_${Date.now()}_${randomSuffix}`;
 }
+
+/**
+ * Generates a RFC 4122 UUID v4 for use as an external order ID.
+ * Uses Node.js built-in crypto module (available in Node 15+).
+ */
+export function generateExternalId(): string {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { randomUUID } = require('crypto') as { randomUUID: () => string };
+  return randomUUID();
+}

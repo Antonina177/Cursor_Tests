@@ -29,10 +29,10 @@ export class CreateOrderModal {
     this.backdropModal().locator('form div:nth-child(4) div.space-y-3 div div div:nth-child(2) input');
 
   readonly notesTextarea = () =>
-    this.page.locator('.fixed.inset-0 form div:nth-child(3) textarea').first();
+    this.page.locator('xpath=/html/body/div/div[1]/main/div/div[6]/div/form/fieldset/div[6]/textarea');
 
   readonly createOrderButton = () =>
-    this.page.locator('.fixed.inset-0 form div.flex.gap-3.justify-end button.px-6').last();
+    this.page.locator('xpath=/html/body/div/div[1]/main/div/div[6]/div/form/div/button[2]');
 
   readonly createRegularOrderModalTitle = () =>
     this.page.getByText('Create Regular Order');

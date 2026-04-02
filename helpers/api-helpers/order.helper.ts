@@ -40,7 +40,7 @@ export async function createOrderAPI(externalId: string): Promise<OrderResponse>
         city:         'Lexington',
         state:        'KY',
         postalCode:   '40503',
-        country:      'USA',
+        country:      'US',
         phone:        '+15551234567',
       },
       externalId,

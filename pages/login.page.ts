@@ -10,7 +10,7 @@ export class LoginPage {
 
   // Error message shown when login fails (wrong credentials or no admin permission)
   readonly errorMessage = () =>
-    this.page.getByText("You don't have permission to access the admin portal");
+    this.page.getByText('Request failed with status code 401');
 
   constructor(page: Page) {
     this.page = page;

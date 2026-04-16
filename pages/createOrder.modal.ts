@@ -20,13 +20,13 @@ export class CreateOrderModal {
   readonly shipButton = () =>
     this.backdropModal().getByRole('button', { name: /ship/i });
 
-  // Product dropdown inside the backdrop modal
+  // Product combobox input (Product 1 field)
   readonly productSelect = () =>
-    this.backdropModal().locator('form div:nth-child(4) div.space-y-3 div div div:nth-child(1) select');
+    this.page.locator('xpath=/html/body/div/div[1]/main/div/div[6]/div/form/fieldset/div[4]/div[2]/div/div/div[1]/div/input');
 
-  // Quantity input inside the backdrop modal
+  // Quantity number input inside the backdrop modal (spinbutton = type="number")
   readonly quantityInput = () =>
-    this.backdropModal().locator('form div:nth-child(4) div.space-y-3 div div div:nth-child(2) input');
+    this.backdropModal().getByRole('spinbutton');
 
   readonly notesTextarea = () =>
     this.page.locator('xpath=/html/body/div/div[1]/main/div/div[6]/div/form/fieldset/div[6]/textarea');
@@ -66,13 +66,19 @@ export class CreateOrderModal {
   }
 
   async selectProduct(productText: string): Promise<void> {
-    const select = this.productSelect();
-    await select.scrollIntoViewIfNeeded();
-    await this.page.waitForTimeout(300);
-
-    await select.waitFor({ state: 'visible' });
-    await select.click();
-    await select.selectOption({ label: productText });
+    // Click the Product 1 * field — dropdown opens without typing
+    const input = this.productSelect();
+    await input.waitFor({ state: 'visible', timeout: 10000 });
+    await input.scrollIntoViewIfNeeded();
+    await input.click();
+    // Scope the search to the product field container (parent of label + input)
+    const productSection = this.page.locator(
+      'xpath=/html/body/div/div[1]/main/div/div[6]/div/form/fieldset/div[4]/div[2]/div/div/div[1]'
+    );
+    await productSection.waitFor({ state: 'visible', timeout: 10000 });
+    const option = productSection.getByText('Combination Kit: TruAge + TruHealth').first();
+    await option.waitFor({ state: 'visible', timeout: 10000 });
+    await option.click();
   }
 
   async fillNotes(notes: string): Promise<void> {

@@ -6,7 +6,7 @@ import { CreateOrderModal } from '../pages/createOrder.modal';
 import { TEST_USERNAME, TEST_PASSWORD, URLS, CUSTOMER_SEARCH } from '../helpers/constants';
 
 // Test-specific constants
-const PRODUCT_NAME = 'Combination Kit: TruAge + TruHealth (TruHealthAgeCombo)';
+const PRODUCT_NAME = 'Combination Kit: TruAge + TruHealth';
 const ORDER_QUANTITY = 5;
 const ORDER_NOTES = 'Automation';
 

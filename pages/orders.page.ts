@@ -6,7 +6,7 @@ export class OrdersPage {
 
   readonly createOrderButton = () =>
     this.page.getByRole('button', { name: 'Create order' }).or(
-      this.page.locator('#root > div.flex.h-screen > main > div > div.mb-4.flex.gap-4 > button')
+      this.page.locator("//button[contains(text(), 'Create Order')]")
     );
 
   readonly ordersTable = () =>

@@ -11,7 +11,7 @@ export class CreateOrderModal {
     this.page.locator('.fixed.inset-0.bg-black.bg-opacity-50.backdrop-blur-sm');
 
   readonly searchCustomerInput = () =>
-    this.page.locator('.fixed.inset-0 form div:nth-child(1) input').first();
+    this.page.locator("//input[@placeholder='Type to search customers...']").first();
 
   readonly customerDropdownOption = (customerName: string) =>
     this.page.locator('.fixed.inset-0 button').filter({ hasText: customerName }).first();
@@ -22,7 +22,7 @@ export class CreateOrderModal {
 
   // Product combobox input (Product 1 field)
   readonly productSelect = () =>
-    this.page.locator('xpath=/html/body/div/div[1]/main/div/div[6]/div/form/fieldset/div[4]/div[2]/div/div/div[1]/div/input');
+    this.page.locator("//input[@placeholder='Search products...']/parent::*");
 
   // Quantity number input inside the backdrop modal (spinbutton = type="number")
   readonly quantityInput = () =>
